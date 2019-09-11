@@ -17,6 +17,7 @@ typeorm.createConnection()
         
         // Initializing app
         const app = createExpressServer({
+            cors: true,
             controllers: [ HomeController ]
         });
 
